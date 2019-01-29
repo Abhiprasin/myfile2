@@ -3,7 +3,6 @@ int addition(int, int);
 int subtraction(int, int);
 int multiplication(int, int);
 int division(int, int);
-int modulo(int, int);
 void display(int);
 int main(){
 	int a=0,b=0,c=0;
@@ -16,7 +15,6 @@ int main(){
 	case 2: display(subtraction(b,c));break;
 	case 3: display(multiplication(b,c));break;
 	case 4: display(division(b,c));break;
-	case 5: display(modulo(b,c));break;
 	default : printf("Invalid");
 	}
 	return 0;	
@@ -32,9 +30,6 @@ return x*y;
 }
 int division(int x, int y){
 return x/y;
-}
-int modulo(int x, int y){
-return x%y;
 }
 void display(int a){
 printf("the result is %d\n", a);
